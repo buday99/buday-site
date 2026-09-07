@@ -1,5 +1,6 @@
 /* css/style.css */
 
+
 /* Variabel CSS */
 :root {
     --primary-dark: #0B1120;
@@ -14,6 +15,7 @@
     --font-code: 'Fira Code', monospace;
     --transition-speed: 0.3s ease;
 }
+
 
 /* Reset dan Base Styling */
 * {
@@ -62,12 +64,14 @@ p {
     margin-bottom: 1em;
 }
 
+
 /* Utilitas dan Layout Dasar */
 .container {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 25px; /* Padding sisi untuk responsivitas */
 }
+
 
 /* Latar belakang konten agar partikel tetap terlihat di belakang */
 .section-padded {
@@ -102,6 +106,7 @@ p {
 .highlight {
     color: var(--accent-blue);
 }
+
 
 /* Navbar */
 .navbar {
@@ -246,6 +251,7 @@ p {
     gap: 20px;
 }
 
+
 /* About Section */
 .about-content {
     font-size: 1.1em;
@@ -259,6 +265,7 @@ p {
 .about-content p strong {
     color: var(--text-light);
 }
+
 
 /* Skills Section */
 .skills-grid {
@@ -315,6 +322,7 @@ p {
     background-color: var(--accent-blue);
     color: white;
 }
+
 
 /* Experience Section (Timeline) */
 .timeline {
@@ -420,8 +428,60 @@ p {
     margin-bottom: 8px;
 }
 
-/* PROJECT */
 
+/* Buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px 30px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    font-size: 1.1em;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all var(--transition-speed);
+}
+
+.primary-btn {
+    background-color: var(--accent-blue);
+    color: white;
+    box-shadow: 0 4px 15px rgba(10, 132, 255, 0.35);
+}
+
+.primary-btn:hover {
+    background-color: #006edb;
+    color: white;
+    box-shadow: 0 6px 20px rgba(10, 132, 255, 0.5);
+    transform: translateY(-3px);
+}
+
+.secondary-btn {
+    background-color: transparent;
+    color: var(--accent-blue);
+    border: 2px solid var(--accent-blue);
+}
+
+.secondary-btn:hover {
+    background-color: var(--accent-blue);
+    color: white;
+    transform: translateY(-3px);
+}
+
+.small-btn {
+    padding: 10px 20px;
+    font-size: 0.9em;
+    border-radius: 6px;
+}
+
+.btn i {
+    line-height: 1;
+}
+
+
+/* Project */
 .projects-grid {
     display: grid;
     grid-template-columns:
@@ -449,6 +509,7 @@ p {
     box-shadow: 0 12px 35px rgba(0, 0, 0, 0.65);
 }
 
+
 /* Project Image */
 .project-img {
     width: 100%;
@@ -458,6 +519,7 @@ p {
     border-bottom: 1px solid var(--border-color);
 }
 
+
 /* Project Information */
 .project-info {
     padding: 25px;
@@ -465,6 +527,7 @@ p {
     display: flex;
     flex-direction: column;
 }
+
 
 /* Project Title */
 .project-info h3 {
@@ -484,6 +547,7 @@ p {
     flex-grow: 1;
 }
 
+
 /* Project Technology */
 .project-tech {
     display: flex;
@@ -492,6 +556,7 @@ p {
     margin-top: 15px;
     margin-bottom: 20px;
 }
+
 
 /* Technology Badge */
 .tech-badge {
@@ -505,6 +570,7 @@ p {
     font-size: 0.85em;
     font-weight: 500;
 }
+
 
 /* Project Links */
 .project-links {
@@ -520,13 +586,15 @@ p {
     text-align: center;
 }
 
-/* SERTIFIKASI */
+
+/* Sertifikasi */
 .certificates-grid {
     display: grid;
     grid-template-columns:
         repeat(auto-fit, minmax(280px, 1fr));
     gap: 35px;
 }
+
 
 /* Certificate Card */
 .certificate-item {
@@ -547,6 +615,7 @@ p {
     box-shadow: 0 12px 35px rgba(0, 0, 0, 0.65);
 }
 
+
 /* Certificate Image */
 .certificate-img {
     width: 100%;
@@ -556,6 +625,7 @@ p {
     border-bottom: 1px solid var(--border-color);
 }
 
+
 /* Certificate Information */
 .certificate-info {
     padding: 25px;
@@ -563,6 +633,7 @@ p {
     display: flex;
     flex-direction: column;
 }
+
 
 /* Certificate Title */
 .certificate-info h3 {
@@ -572,6 +643,7 @@ p {
     line-height: 1.35;
 }
 
+
 /* Certificate Issuer */
 .certificate-info .issuer {
     margin-bottom: 10px;
@@ -580,14 +652,12 @@ p {
     line-height: 1.5;
 }
 
+
 /* Certificate Date */
 .certificate-info .issue-date {
     display: block;
-
     margin-bottom: 20px;
-
     color: var(--accent-green);
-
     font-size: 0.9em;
     line-height: 1.5;
 }
@@ -596,12 +666,15 @@ p {
     margin-right: 8px;
 }
 
+
 /* Certificate Button */
 .certificate-info .btn {
     width: 100%;
     margin-top: auto;
     text-align: center;
 }
+
+
 /* Contact Section */
 .contact-intro {
     font-size: 1.1em;
@@ -645,6 +718,7 @@ p {
     color: white;
 }
 
+
 /* Footer */
 footer {
     background-color: #080D1A;
@@ -675,6 +749,7 @@ footer p {
     color: var(--accent-blue);
 }
 
+
 /* Particle.js container */
 #particles-js {
     position: fixed;
@@ -695,31 +770,39 @@ footer p {
     .section-title {
         font-size: 2.8em;
     }
+
     #hero h1 {
         font-size: 3.5em;
     }
+
     #hero .tagline {
         font-size: 1.4em;
     }
+
     .timeline::before {
         left: 20px; /* Pindah ke kiri untuk mobile */
     }
+
     .timeline-item {
         width: 100%;
         padding-left: 50px;
         text-align: left;
     }
+
     .timeline-item:nth-child(odd) {
         padding-right: 0;
     }
+
     .timeline-item:nth-child(even) {
         left: 0;
     }
+
     .timeline-item .timeline-dot {
         left: 10px !important; /* Override positioning */
         right: auto !important;
     }
 }
+
 
 @media (max-width: 768px) {
     .navbar .nav-links {
@@ -733,13 +816,16 @@ footer p {
         padding: 20px 0;
         border-top: 1px solid var(--border-color);
     }
+
     .navbar .nav-links li {
         text-align: center;
         margin: 10px 0;
     }
+
     .navbar .nav-links.active {
         display: flex; /* Tampilkan saat hamburger diklik */
     }
+
     .hamburger {
         display: flex; /* Tampilkan hamburger */
     }
@@ -747,109 +833,136 @@ footer p {
     #hero h1 {
         font-size: 2.8em;
     }
+
     #hero .tagline {
         font-size: 1.1em;
     }
+
     .hero-buttons {
         flex-direction: column;
     }
+
     .btn {
         width: 80%;
         margin: 10px auto;
     }
+
     .section-title {
         font-size: 2.2em;
     }
+
     .about-content {
         font-size: 1em;
     }
+
     .skills-grid {
         grid-template-columns: 1fr;
     }
+
+    /* Project */
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .project-img {
+        height: 200px;
+    }
+
+    .project-info {
+        padding: 20px;
+    }
+
+    .project-info h3 {
+        font-size: 1.5em;
+    }
+
+    /* Sertifikasi */
+    .certificates-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .certificate-img {
+        height: 200px;
+    }
+
+    .certificate-info {
+        padding: 20px;
+    }
+
+    .certificate-info h3 {
+        font-size: 1.4em;
+    }
+
     .contact-links {
         flex-direction: column;
         align-items: center;
     }
+
     .contact-item {
         width: 90%;
     }
 }
 
+
 @media (max-width: 480px) {
     .container {
         padding: 0 15px;
     }
+
     #hero h1 {
         font-size: 2.2em;
     }
+
     #hero .tagline {
         font-size: 1em;
     }
+
     .profile-img {
         width: 150px;
         height: 150px;
     }
+
     .section-title {
         font-size: 1.8em;
     }
+
     .timeline-content h3 {
         font-size: 1.4em;
     }
+
+    /* Project */
+    .project-img {
+        height: 180px;
+    }
+
+    .project-info {
+        padding: 18px;
+    }
+
+    .project-info h3 {
+        font-size: 1.4em;
+    }
+
+    /* Sertifikasi */
+    .certificate-img {
+        height: 180px;
+    }
+
+    .certificate-info {
+        padding: 18px;
+    }
+
+    .certificate-info h3 {
+        font-size: 1.3em;
+    }
+
+    .project-links {
+        gap: 10px;
+    }
 }
 
-/*  BUTTONS */
-.btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding: 15px 30px;
-    border-radius: 8px;
-    border: none;
-    font-weight: 600;
-    font-size: 1.1em;
-    cursor: pointer;
-    transition: all var(--transition-speed);
-}
-
-/* Primary Button */
-.primary-btn {
-    background-color: var(--accent-blue);
-    color: white;
-    box-shadow: 0 4px 15px rgba(10, 132, 255, 0.35);
-}
-
-.primary-btn:hover {
-    background-color: #006edb;
-    box-shadow: 0 6px 20px rgba(10, 132, 255, 0.5);
-    transform: translateY(-3px);
-}
-
-/* Secondary Button */
-.secondary-btn {
-    background-color: transparent;
-    color: var(--accent-blue);
-    border: 2px solid var(--accent-blue);
-}
-
-.secondary-btn:hover {
-    background-color: var(--accent-blue);
-    color: white;
-    transform: translateY(-3px);
-}
-
-/* Small Button */
-.small-btn {
-    padding: 10px 20px;
-
-    font-size: 0.9em;
-    border-radius: 6px;
-}
-
-/* Button Icon */
-.btn i {
-    line-height: 1;
-}
 
 /* BACK TO TOP BUTTON */
 .back-to-top {
@@ -898,6 +1011,7 @@ footer p {
     transform: translateY(-4px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
+
 
 /* Tampilan mobile */
 @media (max-width: 768px) {
